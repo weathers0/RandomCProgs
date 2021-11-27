@@ -28,8 +28,8 @@ int checkNum(char *s)
 void watermark(FILE *out)
 {
     //Get date
-    char s[15];
-    strcpy(s, getDate());
+    char *s;
+    s = getDate();
 
     //Do printing
     fprintf(out, "|------------------------------------------------------------------------|\n");
@@ -42,13 +42,16 @@ void watermark(FILE *out)
 }
 
 
-void fibonacci(long long N, FILE *out)
+void fibonacci(unsigned long long N, FILE *out)
 {
     fprintf(out, "0\n1\n");
-
     if (N > 2)
     {
-        for (long long z = 0, i = 0, j = 1, next = 0; z < N - 2; z++)
+        unsigned long long i = 0;
+        unsigned long long j = 1;
+        unsigned long long next = 0;
+
+        for (int z = 0; z < N - 2; z++)
         {
             //Next is i + j
             next = i + j;
@@ -57,7 +60,7 @@ void fibonacci(long long N, FILE *out)
             //old next becomes the new j
             j = next;
             //Print j (the old next)
-            fprintf(out, "%i\n", j);
+            fprintf(out, "%llu\n", j);
         }
     }
 }
@@ -80,11 +83,27 @@ char* getDate(void)
     int mday = myTime->tm_mday;
     char *month = mon[myTime->tm_mon + 1];
     int year = myTime->tm_year;
-    printf("isodufygb\n");
-
     //Concatenate and return
     char *sdate = malloc(sizeof(char) * 16);
     sprintf(sdate, "%s %i %s %i", sday, mday, month, year + 1900);
-    printf("%s\n", sdate);
     return sdate;
+}
+
+char* getTime(void)
+{
+    time_t curTime;
+    time(&curTime);
+    struct tm *myTime = localtime(&curTime);
+
+    //Get date values
+    int month = myTime->tm_mon;
+    int mday = myTime->tm_mday;
+    int sec = myTime->tm_sec;
+    int min = myTime->tm_min;
+    int hour = myTime->tm_hour;
+
+    //Concatenate and return
+    char *stime = malloc(sizeof(char) * 50);
+    sprintf(stime, "%i/%i at %i:%i:%i", mday, month, hour, min, sec);
+    return stime;
 }
