@@ -26,14 +26,29 @@ int main(int argc, char *argv[])
     }
 
     //Convert string argv[1] to a number
-    int N = (long long)atoi(argv[1]);
+    int N = (unsigned long long)atoi(argv[1]);
 
     //Open file for printing to
     FILE *out = fopen("textOuts/fibOut.txt", "w");
+    if (out == NULL)
+    {
+        printf("some stuff happened\n");
+        return 3;
+    }
     watermark(out);
+
+    //Finishing beginning touches
+    char *time;
+    time = getTime();
+    printf("%s: Beginning execution\n", time);
 
     //Find the fibonacci numbers
     fibonacci(N, out);
+
+    //Finishing touches
+    time = getTime();
+    printf("%s: Execution Successful!\n", time);
+    fprintf(out, "if u scrolled this far then u get a cookie\n");
 
     //Close print file
     fclose(out);
