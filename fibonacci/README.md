@@ -1,4 +1,6 @@
-This folder contains two versions of my (super awesome epic) fibonacci algorithm.
+<h1>FIBONACHO</h1>
+
+<h2>This folder contains two (WIP on 3) versions of my (super awesome epic) fibonacci algorithm.</h2>
 
 The first version, manyFib, will print the entire sequence up to the number requested.
 For example, giving an input of 5 will print the following:
@@ -8,7 +10,7 @@ Fib(2) = 1
 Fib(3) = 2
 Fib(4) = 3
 Fib(5) = 5
-The generated file name will always be "FibbyG.txt"
+The generated file name will always be "FibbyG.txt" (TODO: Accept filename as command line argument)
 
 The second version, singleFib, will print only the number requested.
 For example, giving and input of 5 will print the following:
