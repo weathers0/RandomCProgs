@@ -4,7 +4,8 @@ This is a program that simulates gene inheritance.
 A family tree is created recursively as a binary search tree.
 Each person has two pointers to their parents, who each have two pointers to their parents. The top level is randomly generated
 
-To run, click the run.bat file or call it from the command line. It simulate the requested number of generations.
+To run, click the run.bat file or call it from the command line.
+The program will ask for a number, then simulate the requested number of generations.
 The outfile will be called inheritance(N).txt where N is the number you entered in batch file.
 
 To save on file size, the outfile will be layed out as below (example with input of 3):
