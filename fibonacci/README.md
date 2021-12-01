@@ -1,4 +1,4 @@
-<h1>FIBONACHO</h1>
+<h1>FIBYNACHO</h1>
 
 <h2>This folder contains two (WIP on 3) versions of my (super awesome epic) fibonacci algorithm.</h2>
 
