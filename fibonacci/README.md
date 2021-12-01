@@ -23,5 +23,5 @@ If you are using manyFib, any time you run the program it will overwrite any fil
 
 If you want to make changes to my code and you have gcc installed, you can run the "comp.bat" script which will automatically compile both main.c and helper.c into a single exe.
 
-----WIP----
+<h3>----WIP----</h3>
 My last version is called multiFib. It is a modified version of singleFib which utilises multithreading. It works exactly in the same way. 
