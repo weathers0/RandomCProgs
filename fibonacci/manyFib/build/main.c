@@ -31,10 +31,10 @@ int main(int argc, char *argv[])
     int N = atoi(argv[1]) + 1;
 
     //Open file for printing to
-    FILE *out = fopen("../textOuts/fibOut.txt", "w");
+    FILE *out = fopen("../output/FibbyG.txt", "w");
     if (out == NULL)
     {
-        printf("No folder named \"textOuts\" in current directory. Create one and re-compile\n");
+        printf("No folder named \"output\" in current directory. Create one and re-run\n");
         return 3;
     }
     watermark(out);

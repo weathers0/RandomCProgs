@@ -1,0 +1,14 @@
+|------------------------------------------------------------------------|
+| This was generated on Thu 1 Dec 2021 by Will's Epic Algorithms Co.    |
+| All fibonacci numbers are now registered trademarks                    |
+| under Will's Epic Algorithms and all associated registered corporations|
+| because he said so. Any attempt to use or pirate these numbers will    |
+| result in prosecution and harsh legal action.                          |
+|------------------------------------------------------------------------|
+Fib(0) = 0
+Fib(1) = 1
+Fib(2) = 1
+Fib(3) = 2
+Fib(4) = 3
+Fib(5) = 5
+if u scrolled this far then u get a cookie

@@ -1,0 +1,9 @@
+|------------------------------------------------------------------------|
+| This was generated on Tue 29 Dec 2021 by Will's Epic Algorithms Co.    |
+| All fibonacci numbers are now registered trademarks                    |
+| under Will's Epic Algorithms and all associated registered corporations|
+| because he said so. Any attempt to use or pirate these numbers will    |
+| result in prosecution and harsh legal action.                          |
+|------------------------------------------------------------------------|
+Fib(420) = 2662710205480735617346452022100755074809023407208374441801919604845563638678145849451440
+if u scrolled this far then u get a cookie

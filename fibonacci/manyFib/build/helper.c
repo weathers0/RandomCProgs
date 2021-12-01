@@ -136,7 +136,7 @@ char* getDate(void)
     //Get date values
     char *sday = wday[myTime->tm_wday];
     int mday = myTime->tm_mday;
-    char *month = mon[myTime->tm_mon + 1];
+    char *month = mon[myTime->tm_mon];
     int year = myTime->tm_year;
     //Concatenate and return
     char *sdate = malloc(sizeof(char) * 16);
@@ -159,6 +159,6 @@ char* getTime(void)
 
     //Concatenate and return
     char *stime = malloc(sizeof(char) * 50);
-    sprintf(stime, "%i/%i at %i:%i:%i", mday, month, hour, min, sec);
+    sprintf(stime, "%i/%i at %02d:%02d:%02d", mday, month + 1, hour, min, sec);
     return stime;
 }

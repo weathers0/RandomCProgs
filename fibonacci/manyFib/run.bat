@@ -1,10 +1,10 @@
 @echo off
-cd %~dp0/exe
+color 2
+cd %~dp0/build
 echo heyy buddy you about to do a saucing
 pause
 echo..
 echo..
-color 2
 
 ::Get N
 set /P NUMBER="Enter a positive number: " 
@@ -12,7 +12,7 @@ set /P NUMBER="Enter a positive number: "
 echo..
 echo.. 
 ::Run c code
-fibonacci.exe %NUMBER%
+manyFib.exe %NUMBER%
 
 echo Check textOuts/fibOut.txt for the results
 pause
